@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="/cadastroDeProduto.css">
+</head>
+<body>
+    
+    <div class="j1">
+        <ul class="nav">
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/login.html">login</a></li>
+            <li><a href="/cadastroIndex.html">cadastro</a></li>
+            <li><a href="/cadastroDeProduto.html">cadastro de produto</a></li>
+        </ul>
+    </div>
+    
+    <div class="box">   
+        <form action=""></form>
+        <fieldset>
+            <legend class="legend_produto"><b>Cadastro de Produto</b></legend>
+            <br>
+            <div class="inputBox">
+            <input type="text" name="nomeProduto" id="nomeProduto" class="inputProduto">
+            <label for="nomeProduto" class="labelInput">Nome do Produto</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+            <input type="text" name="codigoProduto" id="codigoProduto" class="inputProduto">
+            <label for="codigoProduto" class="labelInput">Codigo do Produto</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+            <input type="text" name="idPoduto" id="idPoduto" class="inputProduto">
+            <label for="idPoduto" class="labelInput">Id do Produto</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+            <input type="text" name="PrecoProduto" id="PrecoProduto" class="inputProduto" 
+            placeholder="R$" onkeyup=moeda(this)>
+            <label for="PrecoProduto" class="labelInput">Preco do Produto</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+            <input type="text" name="CodigoAdministrador" id="CodigoAdministrador" class="inputProduto">
+            <label for="CodigoAdministrador" class="labelInput">Codigo de acesso Administrador</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+            <input type="password" name="SenhaAdministrador" id="SenhaAdministrador" class="inputProduto">
+            <label for="SenhaAdministrador" class="labelInput">Senha do Administrador</label>
+        </div>
+        <br>
+
+        <p>Região Loja</p>
+        <input type="radio" id="MinasGerais" name="regiao" value="MinasGerais" required>
+        <label for="MinasGerais">Minas Gerais</label><br>
+        <input type="radio" id="SaoPaulo" name="regiao" value="SaoPaulo" required>
+        <label for="SaoPaulo">Sao Paulo</label><br>
+        <input type="radio" id="RioJaneiro" name="regiao" value="RioJaneiro" required>
+        <label for="RioJaneiro">Rio de Janeiro </label><br>
+       
+        <br>
+        <div class="inputBox">
+            <textarea id="msg" name="msg" rows="9" cols="60"></textarea>         
+            <label for="DescicaoProduto" class="labelInput">Descrição do produto</label>
+        </div>
+        <br><br>
+        <input type="submit" name="sbmite" id="submite">
+        </fieldset>
+
+    </div>
+ 
+        
+    </div>
+<script src="/javascript.js"></script>
+</body>
+</html>

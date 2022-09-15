@@ -1,0 +1,68 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0,128,128), rgb(47,79,79));
+    background-size: cover;
+    display: table;
+    
+}
+
+
+.ji{
+    text-align: center;
+}
+
+.nav{
+    height: 102px;
+   
+    
+    position: relative;
+    
+}
+
+ul {
+    margin: 200px auto;
+    width: 97%;
+    height: 50px;
+    list-style: none;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    position: relative;
+    bottom: 197px;
+    
+    
+    
+}
+
+li {
+    margin-top: 35px;
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    transition: 1s;
+    padding: 25px 30px;
+  
+    
+    
+}
+
+li a:hover{
+    transition: 1s;
+    color: black;
+    background: rgba(255,255,255,0.7);
+  
+}

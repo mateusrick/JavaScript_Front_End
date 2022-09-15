@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cadastroStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="j1">
+        <ul class="nav">
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/login.html">login</a></li>
+            <li><a href="/cadastroIndex.html">cadastro</a></li>
+            <li><a href="/cadastroDeProduto.html">cadastro de produto</a></li>
+        </ul> 
+    </div>
+
+    <div class="box">
+        <form action=""></form>
+        <fieldset>
+        <legend class="legend_cliente"><b>Login Cliente</b></legend>
+        <br>
+        <div class="inputBox">
+            <input type="text" name="nome" id="nome"class="inputUser">
+            <label for="nome" class="labelInput">Nome Completo ou ID</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+            <input type="text" name="cpf_cliente" id="cpf_cliente"class="inputUser" placeholder="00.000-000" oninput=mascara_cep() maxlength="10">
+            <label for="cpf_cliente" class="labelInput">CPF</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox">
+            <input type="text" name="email" id="email"class="inputUser" placeholder="email@gmail.com.br">
+            <label for="email" class="labelInput">Email</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+            <input type="tel" name="telefone" id="telefone"class="inputUser" placeholder="(31)99999-9999"  oninput=mascara_telefone() maxlength="14">
+            <label for="telefone" class="labelInput">Telefone</label>
+        </div>
+        
+        <p>Sexo:</p>
+        <input type ="radio" id="feminino"name="genero" value="feminino" required>
+        <label for="feminino">Feminino</label><br>
+        <input type ="radio" id="masculino"name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type ="radio" id="outro"name="genero" value="outro" required>
+        <label for="outro">outro</label><br><br>
+
+        
+            <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento">
+        
+        <br><br><br>
+
+        <div class="inputBox">
+            <input type="password" name="senha" id="senha"class="inputUser">
+            <label for="password" class="labelInput">Senha</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+            <input type="password" name="senha" id="senha"class="inputUser">
+            <label for="senha" class="labelInput">Confirmar Senha</label>
+        </div><br><br>
+        <input type="submit" name="submit" id="submit">
+        
+        
+    </fieldset>
+    </div>
+
+    
+
+    
+    <div class="box_administrador">
+        <form action=""></form>
+        <fieldset>
+        <legend class="legend_administrador"><b>Login administrador</b></legend>
+        <br>
+        <div class="inputBox_administrador">
+            <input type="text" name="nome_administrador" id="nome_administrador"class="inputUser_administrador">
+            
+            <label for="nome_administrador" class="labelInput_administrador">Nome Completo</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox_administrador">
+            <input type="text" name="cpf_administrador" id="cpf_administrador"class="inputUser_administrador"
+            placeholder="00.000-000" oninput=mascara_cep_admin() maxlength="10">
+            <label for="cpf_administrador" class="labelInput_administrador">CPF</label>
+        </div>
+        <br><br>
+
+        <div class="inputBox_administrador">
+            <input type="text" name="email_administrador" id="email_administrador"class="inputUser_administrador" placeholder="email@gmail.com.br">
+            <label for="email" class="labelInput_administrador">Email</label>
+        </div>
+        <br><br>
+        <div class="inputBox_administrador">
+            <input type="tel" name="telefone_administrador" id="telefone_administrador"class="inputUser_administrador"
+            placeholder="(31)99999-9999" oninput=mascara_telefone_admin() maxlength="14">
+            <label for="telefone_administrador" class="labelInput_administrador">Telefone</label>
+        </div>
+        
+        <p>Sexo:</p>
+        <input type ="radio" id="feminino_administrador"name="genero_administrador" value="feminino_administrador" required>
+        <label for="feminino_administrador">Feminino</label><br>
+        <input type ="radio" id="masculino_administrador"name="genero_administrador" value="masculino_administrador" required>
+        <label for="masculino_administrador">Masculino</label><br>
+        <input type ="radio" id="outro_administrador"name="genero_administrador" value="outro_administrador" required>
+        <label for="outro_administrador">outro</label><br><br>
+
+        
+            <label for="data_nascimento_administrador"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento_administrador" id="data_nascimento_administrador">
+        
+        <br><br><br>
+
+        <div class="inputBox_administrador">
+            <input type="password" name="senha_administrador" id="senha_administrador"class="inputUser_administrador">
+            <label for="password_administrador" class="labelInput_administrador">Senha</label>
+        </div>
+        <br><br>
+        <div class="inputBox_administrador">
+            <input type="password" name="senha_administrador" id="senha_administrador"class="inputUser_administrador">
+            <label for="senha_administrador" class="labelInput_administrador">Confirmar Senha</label>
+        </div><br><br>
+        <input type="submit" name="submit_administrador" id="submit_administrador">
+        
+        
+    </fieldset>
+    </div>
+
+    <script src="/javascript.js"></script>
+
+</body>
+</html>
